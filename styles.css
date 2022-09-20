@@ -1,0 +1,186 @@
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  position:relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Arsenal", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.content {
+  background: linear-gradient(to right top, #e6beae, #f2e9e4), white;
+  background-size: 100% 700px, 100% calc(100% - 700px);
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 700px;
+}
+
+.container {
+  width: 80%;
+  margin: 20px 10% 5% 10%;
+  background: #f8f9fa;
+  border-radius: 25px;
+  box-shadow: 0px 0px 14px rgba(117, 117, 117, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* Design of Intro block: */
+
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  /* padding-top: 50px; */
+  /* margin: 20px 80px 100px 80px; */
+  margin: 50px 80px 100px 80px;
+}
+.intro-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+  border-bottom: 2px solid grey;
+}
+
+.intro-1-job {
+  color: #bb8588;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 15px;
+}
+
+.intro-1-name {
+  font-family: "El Messiri", sans-serif;
+  font-size: 60px;
+}
+
+.text {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 15px;
+  color: grey;
+}
+.fa-circle-check {
+  color: #e6beae;
+  margin: 9px 7px 0 0;
+}
+
+.fa-crow {
+  font-size: 250px;
+  color: #e2ece9;
+  margin-left: 80px;
+}
+
+/* Design of *About me* section */
+
+.about-me {
+  margin: 0 80px 0 80px;
+}
+
+.check-text {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 15px;
+  color: grey;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Design of Projects' block: */
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "El Messiri", sans-serif;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px 0 10px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-description {
+  text-align: center;
+}
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.card a:hover {
+  color: bb8588;
+}
+
+/* Design of *Contact me* block */
+
+.contacts {
+    margin: 0 80px 0 80px;
+}
+
+a {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 17px;
+  text-decoration: none;
+  color: grey;
+}
+
+.contacts a:hover {
+  color: #bb8588;
+  font-weight: bold;
+}
+
+/* Design of Footer */
+
+footer {
+  height:50px;
+  box-shadow: 0px 0px 14px rgba(117, 117, 117, 0.1);
+  background-color: #f8f9fa;
+  margin-bottom: 0;
+}
+
+.footer.text {
+  font-family: "IBM Plex Mono", monospace;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10% 0 10%;
+}
+
+.fa-telegram,
+.fa-envelope-circle-check,
+.fa-envelope,
+.fa-whatsapp {
+  color: #e6beae;
+  font-size: 20px;
+  margin: 15px 15px 0 0;
+}
+
+@media screen and (max-width: 900px) {
+    .intro {
+        flex-wrap: wrap-reverse;
+    }
+    .fa-crow {
+         margin: 0 0 50px 0;
+    }
+}

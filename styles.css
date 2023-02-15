@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  font-weight: 100;
 }
 
 .content {
@@ -60,6 +61,7 @@ body {
   font-size: 15px;
   color: grey;
 }
+
 .fa-circle-check {
   color: #e6beae;
   margin: 9px 7px 0 0;
@@ -87,6 +89,11 @@ ul li {
   list-style: none;
 }
 
+h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+}
+
 /* Design of Projects' block: */
 
 h1 {
@@ -100,12 +107,13 @@ h2 {
   text-align: center;
   font-size: 40px;
   font-family: "El Messiri", sans-serif;
+  font-weight: 500;
 }
 
 .card img {
   width: 200px;
   height: 200px;
-  margin: 0 20px 0 20px;
+  margin: 10px 20px 10px 20px;
   border-radius: 10px;
 }
 
@@ -122,7 +130,14 @@ h2 {
 }
 .card-description {
   text-align: center;
+  margin: 0;
+
 }
+
+.card {
+  margin: 20px;
+}
+
 .card a {
   text-decoration: none;
   color: black;
@@ -134,7 +149,7 @@ h2 {
 /* Design of *Contact me* block */
 
 .contacts {
-    margin: 0 100px 0 100px;
+  margin: 0 100px 0 100px;
 }
 
 a {
@@ -147,6 +162,10 @@ a {
 .contacts a:hover {
   color: #bb8588;
   font-weight: bold;
+}
+
+.contact-list {
+  padding: 0;
 }
 
 /* Design of Footer */
@@ -165,9 +184,9 @@ footer {
 }
 
 .footer-container {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 15% 0 15%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 15% 0 15%;
 }
 
 .fa-telegram,

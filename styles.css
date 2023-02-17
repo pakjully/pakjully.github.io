@@ -35,16 +35,18 @@ body {
 
 .intro {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin: 50px 100px 100px 100px;
-
 }
+
 .intro-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 50px;
-  border-bottom: 2px solid grey;
+  align-items: center;
+  margin-right: 50px;
+  padding-top: 20px;
 }
 
 .intro-1-job {
@@ -56,7 +58,15 @@ body {
 
 .intro-1-name {
   font-family: "El Messiri", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
+}
+
+.intro-image {
+  width: 100%;
+  max-width: 340px ;
+  min-width: 200px;
+  border-radius: 50px;
+
 }
 
 .text {
@@ -131,6 +141,7 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .card-description {
   text-align: center;
   margin: 0;
@@ -204,8 +215,24 @@ footer {
 @media screen and (max-width: 900px) {
     .intro {
         flex-wrap: wrap-reverse;
+        margin: 30px;
+
     }
-    .fa-crow {
-         margin: 0 0 50px 0;
+    .intro-1 {
+      padding-bottom: 50px;
+      margin: 0;
+      border-bottom: 2px solid grey;
+    }
+
+    .intro-1-job {
+      margin-top: 10px;
+    }
+
+    .intro-1-name {
+      font-size: 40px;
+    }
+    .about-me,
+    .contacts {
+      margin: 30px;
     }
 }
